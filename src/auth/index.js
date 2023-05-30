@@ -1,3 +1,3 @@
 export * from "./pages/Login";
 export * from "./context";
-export * from "./types";
+export * from "./types/types";
