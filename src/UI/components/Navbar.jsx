@@ -2,9 +2,10 @@ import { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../auth";
 
-import logoImg from "/logo/logo.png";
+
 
 export const Navbar = () => {
+  const logoImg = "/logo/logo.png";
   const navigate = useNavigate();
   const { user, logout } = useContext(AuthContext);
   const onLogout = () => {
