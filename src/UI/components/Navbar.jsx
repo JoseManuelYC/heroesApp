@@ -5,7 +5,7 @@ import { AuthContext } from "../../auth";
 
 
 export const Navbar = () => {
-  const logoImg = "/heroes/logo.png";
+  const logoImg = "/logo.png";
   const navigate = useNavigate();
   const { user, logout } = useContext(AuthContext);
   const onLogout = () => {
