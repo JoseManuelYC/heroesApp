@@ -18,7 +18,7 @@ export const HeroPage = () => {
   return (
     <div className="row mt-5">
       <div className="col-4 animate__animated animate__bounceIn">
-        <img src={imgUrl} alt={hero.superhero} className="img-thumbnail" />
+        <img src={imgUrl} alt={hero.superhero} className="img-thumbnail" style={{height:"80vh"}} />
       </div>
       <div className="col-8">
         <h3>{hero.superhero}</h3>
