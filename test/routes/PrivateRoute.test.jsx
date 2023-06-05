@@ -4,7 +4,7 @@ import { MemoryRouter } from "react-router-dom"
 import { PrivateRoute } from "../../src/routes/PrivateRoute"
 
 describe('Pruebas en el PrivateRoute', () => {
-  test('Debe de mostrar el children si esta', () => {
+  test('Debe de mostrar el children si esta logeado', () => {
     Storage.prototype.setItem=jest.fn();
     const stateLogged={
       logged:true,
