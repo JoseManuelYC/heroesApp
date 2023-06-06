@@ -30,7 +30,7 @@ describe('Pruebas en el FC SearchHero', () => {
     const input = screen.getByRole("textbox");
     expect(input.value).toBe("batman");
     const img = screen.getByRole("img");
-    expect(img.src).toContain("/heroes/dc-batman.jpg");
+    expect(img.src).toContain("/img/dc-batman.jpg");
     const alert = screen.getByLabelText("danger");
     expect(alert.style.display).toBe("none");
   })

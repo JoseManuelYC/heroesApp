@@ -50,8 +50,4 @@ describe('Pruebas en el FC Navbar', () => {
     expect(mockUseNavigate).toHaveBeenCalledWith("/login", {"replace": true});
     
   })
-
-  
-  
-  
 })

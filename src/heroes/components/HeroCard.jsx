@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import { Link } from "react-router-dom";
 
 export const HeroCard = ({
@@ -9,15 +7,9 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const [img, setImg] = useState()
 
-  useEffect(() => {
-    (async () => {
-      const img = await import(`../../../public/heroes/${id}.jpg`).then((asset) => asset.default)
+const img = `/img/${id}.jpg`;
 
-      setImg(img)
-    })()
-  }, [id])
 
   return (
     <div className="col">
